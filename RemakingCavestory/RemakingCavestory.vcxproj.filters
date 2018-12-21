@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Sprites">
+      <UniqueIdentifier>{202aa649-ecfb-415b-9f9b-703ecee9ea34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\backgrounds">
+      <UniqueIdentifier>{c7e42661-541f-40e4-8ca1-085b68dbbaf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\maps">
+      <UniqueIdentifier>{d32e382f-cb2e-4b3b-852e-546e892e6023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\tilesets">
+      <UniqueIdentifier>{b288c2d5-8d47-42c2-a641-9032cbcc5ef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\sounds">
+      <UniqueIdentifier>{2c6cf13b-9c64-4854-9c02-c4b4d927ebcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\music">
+      <UniqueIdentifier>{3af8bf0c-26ee-4cca-9b33-13c0224b6f49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="animatedsprite.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="level.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="tile.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="animatedtile.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="hud.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="audio.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="guns.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="shoot.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphics.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="animatedsprite.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="level.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="rectangle.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="slope.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="animatedtile.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="hud.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="audio.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="door.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="guns.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="shoot.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="content\backgrounds\bkBlue.png">
+      <Filter>Файлы ресурсов\backgrounds</Filter>
+    </Image>
+    <Image Include="content\sprites\MyChar.png">
+      <Filter>Файлы ресурсов\Sprites</Filter>
+    </Image>
+    <Image Include="content\sprites\Arms.png">
+      <Filter>Файлы ресурсов\Sprites</Filter>
+    </Image>
+    <Image Include="content\sprites\Bullet.png">
+      <Filter>Файлы ресурсов\Sprites</Filter>
+    </Image>
+    <Image Include="content\sprites\NpcCemet.png">
+      <Filter>Файлы ресурсов\Sprites</Filter>
+    </Image>
+    <Image Include="content\sprites\TextBox.png">
+      <Filter>Файлы ресурсов\Sprites</Filter>
+    </Image>
+    <Image Include="content\tilesets\NpcSym.png">
+      <Filter>Файлы ресурсов\tilesets</Filter>
+    </Image>
+    <Image Include="content\tilesets\PrtCave.png">
+      <Filter>Файлы ресурсов\tilesets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\maps\Map_1.tmx">
+      <Filter>Файлы ресурсов\maps</Filter>
+    </None>
+    <None Include="content\maps\Map_2.tmx">
+      <Filter>Файлы ресурсов\maps</Filter>
+    </None>
+    <None Include="content\maps\Map_test.tmx">
+      <Filter>Файлы ресурсов\maps</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="content\sounds\Bass03.wav">
+      <Filter>Файлы ресурсов\sounds</Filter>
+    </Media>
+    <Media Include="content\music\Gestation.wav">
+      <Filter>Файлы ресурсов\music</Filter>
+    </Media>
+    <Media Include="content\music\Quiet.wav">
+      <Filter>Файлы ресурсов\music</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

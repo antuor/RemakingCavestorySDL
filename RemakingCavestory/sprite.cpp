@@ -1,0 +1,86 @@
+#include "sprite.h"
+
+Sprite::Sprite() {}
+
+Sprite::Sprite(Graphics &graphics, const std::string &filePath, int sourceX, int sourceY, int width, int height,
+	float posX, float posY) : x(posX), y(posY)
+{
+	this->sourceRect.x = sourceX;
+	this->sourceRect.y = sourceY;
+	this->sourceRect.w = width;
+	this->sourceRect.h = height;
+
+	this->spriteSheet = SDL_CreateTextureFromSurface(graphics.getRenderer(), graphics.loadImage(filePath));
+	if (this->spriteSheet == NULL) 
+	{
+		std::cout << "Error: Unable to load from image" << std::endl;
+	}
+
+	this->boundingBox = Rectangle(this->x, this->y, width * globals::SPRITE_SCALE, height * globals::SPRITE_SCALE);
+}
+
+Sprite::~Sprite() {}
+
+void Sprite::draw(Graphics &graphics, int x, int y) 
+{
+	SDL_Rect destinationRectungle = { x, y, this->sourceRect.w * globals::SPRITE_SCALE, this->sourceRect.h * globals::SPRITE_SCALE};
+	graphics.blitSurface(this->spriteSheet, &this->sourceRect, &destinationRectungle);
+}
+
+void Sprite::update() 
+{
+	this->boundingBox = Rectangle(this->x, this->y,
+		this->sourceRect.w * globals::SPRITE_SCALE, this->sourceRect.h * globals::SPRITE_SCALE);
+}
+
+const Rectangle Sprite::getBoundingBox() const
+{
+	return this->boundingBox;
+}
+
+/* Side getColisionSide
+ * Determine which side the colision happend on
+ */
+const sides::Side Sprite::getCollisionSide(Rectangle &other) const
+{
+	int amtRight, amtLeft, amtTop, amtBottom;
+	amtRight = this->getBoundingBox().getRight() - other.getLeft();
+	amtLeft = other.getRight() - this->getBoundingBox().getLeft();
+	amtTop = other.getBottom() - this->getBoundingBox().getTop();
+	amtBottom = this->getBoundingBox().getBottom() - other.getTop();
+
+	int vals[4] = { abs(amtRight), abs(amtLeft), abs(amtTop), abs(amtBottom) };
+	int lowest = vals[0];
+	for (int i = 0; i < 4; i++)
+	{
+		if (vals[i] < lowest)
+			lowest = vals[i];
+	}
+
+	return
+		lowest == abs(amtRight) ? sides::RIGHT :
+		lowest == abs(amtLeft) ? sides::LEFT :
+		lowest == abs(amtTop) ? sides::TOP :
+		lowest == abs(amtBottom) ? sides::BOTTOM :
+		sides::NONE;
+}
+
+void Sprite::setSourceRectX(int value)
+{
+	this->sourceRect.x = value;
+}
+
+void Sprite::setSourceRectY(int value)
+{
+	this->sourceRect.y = value;
+}
+
+void Sprite::setSourceRectW(int value)
+{
+	this->sourceRect.w = value;
+}
+
+void Sprite::setSourceRectH(int value)
+{
+	this->sourceRect.h = value;
+}
